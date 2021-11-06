@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spring Security Example</title>
+</head>
+<body>
+<!--<div >-->
+<!--    Invalid username or password-->
+<!--</div>-->
+<!--<div>-->
+<!--    You have been logged out-->
+<!--</div>-->
+Login page
+<form method="post" action="/login">
+    <div><label> User Name : <input type="text" name="username"></label></div>
+    <div><label> Password : <input type="password" name="password"></label></div>
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+    <div><input type="submit" value="Sign in"/></div>
+</form>
+<a href="/registration">Register</a>
+
+
+</body>
+</html>
