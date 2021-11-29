@@ -1,9 +1,10 @@
 <#import "parts/common.ftlh" as c>
 <#import "parts/login.ftlh" as l>
 <@c.page>
-
-    <@l.logout />
-
+    <div>
+        <@l.logout />
+        <span><a href="/user">User List</a></span>
+    </div>
     <div>
         <form method="post">
             <input type="hidden" name="_csrf" value="${_csrf.token }"/>
